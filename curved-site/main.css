@@ -1,0 +1,83 @@
+
+.container{
+    padding: 30px 0px;
+}
+
+.wrapper{ 
+   text-align: center; 
+}
+
+.wrapper h1{
+    font-size: 3.2em;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+p{
+    font-size: 1em;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 60px;
+}
+
+.relative{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+
+.images {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    overflow: auto;
+    width: 100%;
+    flex-flow: row nowrap;
+}
+
+.images.mandatory-scroll-snapping {
+    scroll-snap-type: x mandatory;
+  }
+
+
+.images img{
+    width: 400px;
+    height: 500px;
+}
+
+.images > img {
+    text-align: center;
+    scroll-snap-align: center;
+    flex: none;
+  }
+  
+
+.svg-container{
+  height: 150px;  
+  width: 100%;
+}
+
+.absolute-1{
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.absolute-2{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+.button{
+    padding: 20px 60px;
+    background-color: rgb(8, 103, 54);
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
